@@ -29,9 +29,8 @@ class CustomTabNavigationUITests: XCTestCase {
         for staticText in app.staticTexts.allElementsBoundByIndex {
             print(staticText.label)
             }
-        
-        XCTAssert(image.children(matching: .other).element(boundBy: 1).exists)
-       
+    
+        XCTAssert(app.staticTexts["Profile"].exists)
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
